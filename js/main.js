@@ -1818,9 +1818,9 @@ const roundThreePrompts = [
 ];
 
 const instructions = [
-  'Click get prompt, then take 3 minutes to write a list inspired by it.',
-  'Click get prompt, then take 5 minutes to write a story about it using 3-5 words from your list.',
-  'Click get prompt, then take 10 minutes to write another story inspired by your first story.',
+  'Click "Get Prompt," then take 3 minutes to write a list inspired by the prompt.',
+  'Click "Get Prompt," then take 5 minutes to write a story inspired by the prompt while using 3-5 words from your list.',
+  'Click "Get Prompt," then take 10 minutes to write another story using the inspired by the prompt and your first story .',
 ];
 const instructionsPara = document.querySelector('.instructions');
 const promptText = document.querySelector('.prompt-text');
@@ -1837,7 +1837,7 @@ startButton.addEventListener('click', startTimer);
 stopButton.addEventListener('click', newRound);
 // Hide the stop button initially
 stopButton.style.display = 'none';
-
+promptText.style.visibility = 'hidden';
 function displayInstructions() {
   if (round === 0) {
     instructionsPara.textContent = instructions[0];
