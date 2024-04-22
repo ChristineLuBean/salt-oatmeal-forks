@@ -1876,6 +1876,7 @@ function startTimer() {
     timeLeft = 600; // Set timer to 15 seconds for round 2
   }
   timerId = setInterval(countDown, 1000);
+  promptText.style.visibility = 'visible';
   startButton.style.display = 'none';
   displayPrompt();
   updateTimerDisplay();
