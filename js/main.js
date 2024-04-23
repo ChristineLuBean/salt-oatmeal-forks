@@ -1866,14 +1866,15 @@ function stopTimer() {
   timerId = null;
   stopButton.style.display = 'inline-block';
   startButton.style.display = 'none';
+  promptText.style.visibility = 'hidden';
 }
 function startTimer() {
   if (round === 0) {
-    timeLeft = 180; // Set timer to 5 seconds for round 0
+    timeLeft = 180;
   } else if (round === 1) {
-    timeLeft = 300; // Set timer to 10 seconds for round 1
+    timeLeft = 300;
   } else {
-    timeLeft = 600; // Set timer to 15 seconds for round 2
+    timeLeft = 600;
   }
   timerId = setInterval(countDown, 1000);
   promptText.style.visibility = 'visible';
@@ -1910,7 +1911,7 @@ function newRound() {
   } else {
     round++;
   }
-  promptText.textContent = '';
+
   displayInstructions();
 }
 
