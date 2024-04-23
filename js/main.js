@@ -1820,7 +1820,7 @@ const roundThreePrompts = [
 const instructions = [
   'Click "Get Prompt," then take 3 minutes to write a list inspired by the prompt.',
   'Click "Get Prompt," then take 5 minutes to write a story inspired by the prompt while using 3-5 words from your list.',
-  'Click "Get Prompt," then take 10 minutes to write another story using the inspired by the prompt and your first story .',
+  'Click "Get Prompt," then take 10 minutes to write another story using the inspired by the prompt and your first story.',
 ];
 const instructionsPara = document.querySelector('.instructions');
 const promptText = document.querySelector('.prompt-text');
