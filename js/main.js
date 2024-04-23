@@ -1830,8 +1830,8 @@ const timerSpan = document.querySelector('.timer');
 
 let round = 0;
 let timerId = null;
-let timeLeft = 5;
-// let timeLeft = 180; // 3 minutes in seconds
+let timeLeft = 180;
+
 
 startButton.addEventListener('click', startTimer);
 stopButton.addEventListener('click', newRound);
